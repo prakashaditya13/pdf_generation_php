@@ -2,6 +2,7 @@
 Generate PDF using PHP with database
 
 ## Installing - 
+NOTE :- Works Only For PHP 7.4v
 -> Install Composer
 -> Set the path for PHP and Composer
 -> Install Mpdf library by using this command -
