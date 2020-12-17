@@ -151,11 +151,11 @@ $PDF_TEMP = "<!doctype html>
                     <table>
                         <tr>
                             <td class='title'>
-                                <img src='https://www.goetra.com/assets/images/logo.png' style='width:90px; height:50px;'>
+                                <img src='logos/icon-1.jpeg' style='width:150px; height:70px;'>
                             </td>
                             
                             <td>
-                                Invoice #: $Invoice_no<br>
+                                Order Id #: $Invoice_no<br>
                                 Created: $created_at<br>
                                 Due: $due_d
                             </td>
