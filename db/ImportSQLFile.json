@@ -1,0 +1,9 @@
+[
+{"type":"header","version":"5.0.4","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"pdf"},
+{"type":"table","name":"mytable","database":"pdf","data":
+[
+{"Inv_no":"12","created_At":"2020-12-01","due_date":"2020-12-30","customer0Cust_name":"Aditya Prakash","customer0address":"Bhopal, gandhinagar","customer0email":"prakashaditya13011999@gmail.com","company0comp_name":"Goetra","company0address":"New Delhi","company0email":"XYZ@gmail.com"}
+]
+}
+]
