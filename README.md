@@ -2,7 +2,7 @@
 Generate PDF using PHP with database
 
 ## Installing - 
-NOTE :- Works Only For PHP 7.4v
+NOTE :- Works Only For PHP 7.0v >= 7.4v
 
 -> Install Composer
 -> Set the path for PHP and Composer
