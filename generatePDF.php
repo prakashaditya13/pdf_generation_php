@@ -225,7 +225,7 @@ $PDF_TEMP = "<!doctype html>
             </tr>
             
             <tr class='item'>
-                <td>
+                <td>   
                     Hosting (3 months)
                 </td>
                 
