@@ -116,13 +116,13 @@ $PDF_TEMP = "<!doctype html>
     @media only screen and (max-width: 600px) {
         .invoice-box table tr.top table td {
             width: 100%;
-            display: block;
+            // display: block;
             text-align: center;
         }
         
         .invoice-box table tr.information table td {
             width: 100%;
-            display: block;
+            // display: block;
             text-align: center;
         }
     }
@@ -140,6 +140,14 @@ $PDF_TEMP = "<!doctype html>
     .rtl table tr td:nth-child(2) {
         text-align: left;
     }
+    .pay_status{
+        color: green;
+        font-weight: bold;
+    }
+    .invoice-box table tr.heading{
+        width: 300px;
+        position: absolute;
+    }
     </style>
 </head>
 
@@ -155,9 +163,8 @@ $PDF_TEMP = "<!doctype html>
                             </td>
                             
                             <td>
-                                Order Id #: $Invoice_no<br>
-                                Created: $created_at<br>
-                                Due: $due_d
+                                Order Id   : 12<br>
+                                Order Date : 17/2/21<br>
                             </td>
                         </tr>
                     </table>
@@ -169,15 +176,14 @@ $PDF_TEMP = "<!doctype html>
                     <table>
                         <tr>
                             <td>
-                                $cust_name<br>
-                                $cust_email<br>
-                                $cust_addr
+                                Users Name<br>
+                                Users Email<br>
+                                Users Address
                             </td>
                             
                             <td>
-                                $comp_name<br>
-                                $comp_addr<br>
-                                $comp_email
+                                Goetra<br>
+                                New Delhi<br>
                             </td>
                         </tr>
                     </table>
@@ -186,27 +192,36 @@ $PDF_TEMP = "<!doctype html>
             
             <tr class='heading'>
                 <td>
-                    Payment Method
-                </td>
-                
-                <td>
-                    Check #
+                    Service Type
                 </td>
             </tr>
             
             <tr class='details'>
                 <td>
-                    Check
+                    Enter the service
                 </td>
-                
+            </tr><br>
+
+            <tr class='heading'>
                 <td>
-                    1000
+                    Route
+                </td>
+            </tr>
+            
+            <tr class='details'>
+                <td>
+                    <ol>
+                        <li>Address 1</li>
+                        <li>Address 2</li>
+                        <li>Address 3</li>
+                        <li>Address 4</li>
+                    </ol>
                 </td>
             </tr>
             
             <tr class='heading'>
                 <td>
-                    Item
+                    Order Summary
                 </td>
                 
                 <td>
@@ -216,42 +231,55 @@ $PDF_TEMP = "<!doctype html>
             
             <tr class='item'>
                 <td>
-                    Website design
+                    Distance Fare
                 </td>
                 
                 <td>
-                    $300.00
+                    Rs.350.00
                 </td>
             </tr>
             
             <tr class='item'>
                 <td>   
-                    Hosting (3 months)
+                    Cash Handling Charge
                 </td>
                 
                 <td>
-                    $75.00
+                    Rs.0.00
                 </td>
             </tr>
             
             <tr class='item last'>
                 <td>
-                    Domain name (1 year)
+                    Charges for security
                 </td>
                 
                 <td>
-                    $10.00
+                    Rs.0.00
+                </td>
+            </tr>
+
+            <tr class='item last'>
+                <td>
+                    Promocode
+                </td>
+                
+                <td>
+                    -Rs.0.00
                 </td>
             </tr>
             
             <tr class='total'>
-                <td></td>
+                <td>
+                    <b>Total</b>
+                </td>
                 
                 <td>
-                   Total: $385.00
+                    Rs.350.00
                 </td>
             </tr>
-        </table>
+        </table><br>
+        <p>Payment Status: <span class='pay_status'>Paid</span></p>
     </div>
 </body>
 </html>";
