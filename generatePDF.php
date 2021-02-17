@@ -10,7 +10,7 @@ try {
 } catch (PDOException $ex) {
     error_log("Connection Error - ". $ex);
     exit();
-}
+}   
 
 
 //Fetching data from Database
